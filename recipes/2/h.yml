@@ -10,7 +10,6 @@ modules:
   - type: kargs
     kargs:
       - amdgpu.ppfeaturemask=0xffffffff
-      - zfs.zfs_arc_max=17179869184
       - pcie_aspm=off
   - type: dnf
     install:
@@ -29,21 +28,15 @@ modules:
         - seabios
         - edk2-ovmf
         - edk2-aarch64
-        - edk2-riscv
         - libvirt-daemon-kvm
         - libvirt-daemon-qemu
         - libvirt-daemon-common
-        - libvirt-client
         - libvirt-nss
         - virt-install
         - libvirt-daemon-config-network
         - dnsmasq
-        - iptables-nft
-        - vde2
-        - vde-cryptcab
         - tuned
         - numactl
-        - pciutils
         - usbutils
         - qemu-block-curl
         - tuned-ppd

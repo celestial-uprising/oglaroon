@@ -1,15 +1,14 @@
 # yaml-language-server: $schema=https://blue-build.org
-name: gg
-description: Celestial-Uprising's Immutable Operating System
-base-image: ghcr.io/celestial-uprising/mini
+name: oglaroon-gg
+description: Celestial Uprising's Immutable Operating System
+base-image: ghcr.io/celestial-uprising/oglaroon
 image-version: latest
 modules:
   - type: os-release
     properties:
-      VARIANT: "gg"
+      VARIANT: "oglaroon-gg"
   - type: kargs
     kargs:
-      - zfs.zfs_arc_max=17179869184
       - pcie_aspm=off
   - type: dnf
     repos:

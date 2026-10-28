@@ -1,29 +1,34 @@
 # Celestial Uprising's Bleeding-Edge Release Track &nbsp; [![bluebuild build badge](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml/badge.svg)](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml)
+
 ## *Fedora-Bootc 46* + *Lesbidoodle Rabbit Coven Magic* = *Oglaroon*
 
-- *Flyline* | bash plugin, written in assembly resulting in astonishing speed and a slim footprint
+- *Flyline* | bash plugin, cause thinking shouldn't require spelling degrees
 - *Herdr* | terminal multiplexor, assigned to `CapsLock+Shift+Enter`
-- *Neovim* | cli Editor, with lazyvim and its dependencies preconfigured
+- *Neovim* | cli Editor, with lazyvim's dependencies preconfigured
+- *Pi-Bolt* | llm harness, precompiled Pi Agent for maximum speed with plugin compatibility 
 - *Tailscale* | wireguard infused protocol, vpn, secure access, and psuedo-local networking
-- *Rhun* | gui Code-Editor, written in assembly resulting in astonishing speed and a slim footprint
+- *Rhun* | IDE written in assembly, truly absurd speed in a slim footprint
 - *Kitty* | terminal emulator, preconfigured for Celestial-Uprising and assigned to `CapsLock+Enter`
 - *Zen-Browser* | lightweight, appeasing design, compatible with firefox accounts
-
-## *Celestial-Uprising is proudly built for all, by lesbidoodles and their coven of magical rabbits*
+- *Niri* | rust built tiling window manager of the future
+- *Waybar* | simple, yet pleasing (intended to be replaced by a rust native tool...)
+- *Rofi* | launcher, preconfigured for Celestial-Uprising and assigned to `CapsLock+d`
 
 ## Spins
 
-- *virt*  -- secure and specialized for qemu + kvm virtual enviroments
-- *headless*  -- deployable and reliable
 - *oglaroon*  -- gracefully unstoppable
 - *muse*  -- elegant workspace with creator tools preinstalled
 - *dev*  -- clean & classy; virtualization tools included
 - *gg*  -- minimal desktop, maximum fps; steam/gamescope/mangohud
 - *unholy*  -- work hard, play hard, build anything
+- *headless*  -- deployable and reliable
+- *virt*  -- secure and specialized for qemu + kvm virtual enviroments
+
+## *Celestial-Uprising is proudly built for all, by lesbidoodles and their coven of magical rabbits*
 
 ### *Dog-fooding*
 
-Testing and development is performed on a small array of ryzen based machines; by a coven of elusive rabbits with whom gaia has bestowed the privilege of magic.
+*Testing and development is performed on a small array of ryzen based machines; by a coven of elusive rabbits with whom gaia has bestowed the privilege of magic.*
 
 #### *Personal Machines*
 
@@ -33,7 +38,7 @@ Testing and development is performed on a small array of ryzen based machines; b
 |bella |headless |AMD Ryzen 7 5700G *8c/16t* |128GiB 3200MHz |Vega iGPU + RX 580 *8GiB* |
 |lily |virt |AMD EPYC Virtualized *6c/6t* |12GiB virtualized |--- |
 
-- (the following machines have been temporarily reassigned to testing and development of *Ubuntu 27.04 Tenacious T-Rex*)
+- *temporarily reassigned to testing and development related to Ubuntu 27.04 Tenacious T-Rex*
 
 | hostid | spin | cpu | memory | gpus |
 | :--- | :--- | :--- | :--- | :--- |
