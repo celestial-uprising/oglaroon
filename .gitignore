@@ -1,0 +1,10 @@
+cosign.key
+cosign.private
+/Containerfile
+*.iso
+*.iso-CHECKSUM
+/.bluebuild-scripts_*
+*.bak
+/files/rpm/*
+/files/corgi
+/files/pi-b*
