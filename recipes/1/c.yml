@@ -63,7 +63,7 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b01 by Celestial Uprising"
+      PRETTY_NAME: "Oglaroon b02 by Celestial Uprising"
       VERSION_CODENAME: "dumpling"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
@@ -93,6 +93,7 @@ modules:
         - iwlwifi-mvm-firmware
         - NetworkManager-wifi
         - pciutils
+        - usbutils
         - kernel-modules-extra
         - glibc-langpack-en
         - tailscale
