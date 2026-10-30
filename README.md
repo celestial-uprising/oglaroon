@@ -4,7 +4,7 @@
 
 - *Yazi* | rapid & beautiful rusty file-manager 
 - *Flyline* | bash plugin, cause thinking shouldn't require spelling degrees
-- *Herdr* | terminal multiplexor, assigned to `CapsLock+Shift+Enter`
+- *Corgi* | modern-day t-mux/herdr replacement with intense QoL improvements and optional agent integration
 - *Neovim* | cli Editor, with lazyvim's dependencies preconfigured
 - *Siltide Amdtop Nvtop Btop Radeontop S-tui Powertop* | detailed insights for all type of hardware
 - *Pi-Bolt Llmfit* | llm harness, pre-compiled Pi Agent for maximum speed with plugins; local llm tui research tool

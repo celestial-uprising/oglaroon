@@ -3,7 +3,6 @@ set -euo pipefail
 TAR="zen.linux-x86_64.tar.xz"
 TARBALL="https://github.com/zen-browser/desktop/releases/download/1.24b/$TAR"
 DIR="/tmp"
-mkdir "$DIR"
 cd "$DIR"
 wget "$TARBALL"
 tar xf "$TAR"
