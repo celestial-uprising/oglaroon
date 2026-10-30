@@ -7,4 +7,3 @@ cd "$DIR"
 wget "$TARBALL"
 tar xf "$TAR"
 cp -r zen /opt/
-rm -rf /tmp/*
