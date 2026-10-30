@@ -20,15 +20,8 @@ stages:
           - mkdir -p /tmp/bin
           - |
             dnf5 upgrade -y && dnf5 install -y \
-              zig libdrm-devel pkg-config pam-devel cargo rustc \
-              systemd-devel libunwind-devel elfutils-devel \
-              protobuf-compiler perl clang-devel llvm-devel \
-              openssl-devel dbus-devel jack-audio-connection-kit-devel \
-              alsa-lib-devel cmake make gcc-c++ python3 python3-devel \
-              fontconfig-devel m4 pipewire-devel libva-devel libcxx-devel \
-              llvm-libunwind libpcap-devel golang \
-              libusb1-devel bluez-libs-devel pulseaudio-libs-devel libcap-devel zlib-devel \
-              tar gzip curl
+              cargo rustc golang pkg-config make gcc-c++ cmake tar gzip curl \
+              libdrm-devel libpcap-devel openssl-devel zlib-devel
             curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
             MD_FILE="/tmp/cargo-nobinstall.md"
             while read -r line || [ -n "$line" ]; do
@@ -63,8 +56,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b02 by Celestial Uprising"
-      VERSION_CODENAME: "dumpling"
+      PRETTY_NAME: "Oglaroon b03 by Celestial Uprising"
+      VERSION_CODENAME: "hushpuppy"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -120,7 +113,6 @@ modules:
         - lm_sensors
         - btop
         - gdu
-        - hyperfine
         - pastel
         - git
         - make
@@ -156,6 +148,7 @@ modules:
         destination: /etc/profile.d/
   - type: script
     scripts:
+      - corgi.sh
       - pibolt.sh
       - regenerateinitramfs.sh
   - type: wayblue-signing
