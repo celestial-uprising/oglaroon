@@ -86,6 +86,7 @@ modules:
   - type: script
     scripts:
       - rhun.sh
+      - zen.sh
   - type: files
     files:
       - source: system/
