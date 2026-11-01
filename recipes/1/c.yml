@@ -150,6 +150,7 @@ modules:
     scripts:
       - corgi.sh
       - pi-bolt.sh
+      - annoyances.sh
       - regenerateinitramfs.sh
   - type: wayblue-signing
     source: local

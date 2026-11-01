@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 PIBOLT_VERSION="bolt-v1.0.9"
 PIBOLT_INSTALL_DIR="/usr/share/pi-bolt"
@@ -22,5 +22,3 @@ export PIBOLT_HOME="${PLUGINS_DIR}"
 /usr/local/bin/pi-bolt install --pi-bolt npm:pi-markdown-preview
 /usr/local/bin/pi-bolt install --pi-bolt npm:pi-web-access
 /usr/local/bin/pi-bolt install --pi-bolt npm:rea-agents
-/usr/local/bin/pi-bolt --version
-/usr/local/bin/pi-bolt list
