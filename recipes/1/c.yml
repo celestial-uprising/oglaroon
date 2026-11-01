@@ -56,8 +56,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b05 by Celestial Uprising"
-      VERSION_CODENAME: "crabcake"
+      PRETTY_NAME: "Oglaroon b06 by Celestial Uprising"
+      VERSION_CODENAME: "tartine"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -122,6 +122,19 @@ modules:
         - plymouth-theme-spinner
         - nodejs
         - npm
+        - rustup
+        - libquadmath
+        - libquadmath-devel
+        - glibc
+        - glibc-devel
+        - ccache
+        - llvm
+        - lld
+        - flex
+        - dwarves
+        - bison
+        - bc
+        - pkgconf
   - type: copy
     from: rusty
     src: /tmp/bin/
@@ -146,10 +159,15 @@ modules:
     files:
       - source: system/etc/profile.d/aliases.sh
         destination: /etc/profile.d/
+  - type: files
+    files:
+      - source: aocc-rpm
+        destination: /tmp
   - type: script
     scripts:
       - corgi.sh
       - pi-bolt.sh
+      - aocc.sh
       - annoyances.sh
       - regenerateinitramfs.sh
   - type: wayblue-signing
