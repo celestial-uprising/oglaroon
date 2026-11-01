@@ -151,5 +151,5 @@ modules:
       - corgi.sh
       - pi-bolt.sh
       - regenerateinitramfs.sh
-  - type: signing
+  - type: wayblue-signing
     source: local
