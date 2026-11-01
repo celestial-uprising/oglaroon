@@ -146,7 +146,8 @@ modules:
         - vulkan-loader-devel
         - vulkan-headers
         - vulkan-tools
-        - mimalloc mimalloc-devel
+        - mimalloc
+        - mimalloc-devel
   - type: copy
     from: rusty
     src: /tmp/bin/
