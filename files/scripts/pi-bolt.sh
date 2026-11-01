@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
-PIBOLT_VERSION="bolt-v0.2.0"
+PIBOLT_VERSION="bolt-v1.0.9"
 PIBOLT_INSTALL_DIR="/usr/share/pi-bolt"
 PIBOLT_VERSION_DIR="${PIBOLT_INSTALL_DIR}/${PIBOLT_VERSION}"
 mkdir -p "${PIBOLT_VERSION_DIR}"
-curl -fsSL "https://registry.npmjs.org/pi-bolt/-/pi-bolt-${PIBOLT_VERSION}.tgz" -o /tmp/pi-bolt.tgz
+curl -fsSL "https://github.com/opensec-git/Pi-Bolt/releases/download/${PIBOLT_VERSION}/pi-bolt-linux-x64-jit.tar.gz" -o /tmp/pi-bolt.tgz
 tar -xzf /tmp/pi-bolt.tgz -C "${PIBOLT_VERSION_DIR}" --strip-components=1
 rm -f /tmp/pi-bolt.tgz
 ln -sf "${PIBOLT_VERSION_DIR}/pi" /usr/bin/pi-bolt
