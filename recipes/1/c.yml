@@ -135,6 +135,18 @@ modules:
         - bison
         - bc
         - pkgconf
+        - ninja-build
+        - llvm-devel 
+        - libomp
+        - libomp-devel
+        - golang
+        - openblas
+        - openblas-devel
+        - vulkan-loader
+        - vulkan-loader-devel
+        - vulkan-headers
+        - vulkan-tools
+        - mimalloc mimalloc-devel
   - type: copy
     from: rusty
     src: /tmp/bin/
