@@ -1,19 +1,19 @@
 # Celestial Uprising's Bleeding-Edge Release Track &nbsp; [![bluebuild build badge](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml/badge.svg)](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml)
 
-## *Fedora-Bootc 46* + *Lesbidoodle Rabbit Coven Magic* = *Oglaroon*
+## *Fedora-Bootc Rawhide* + *AMD's AOCC Compiler* + *Lesbidoodle Rabbit Coven Magic* = *Oglaroon*
 
 - *Yazi* | rapid & beautiful rusty file-manager 
 - *Flyline* | bash plugin, cause thinking shouldn't require spelling degrees
 - *Corgi* | modern-day t-mux/herdr replacement with intense QoL improvements and optional agent integration
 - *Neovim* | cli Editor, with lazyvim's dependencies preconfigured
-- *Siltide Amdtop Nvtop Btop Radeontop S-tui Powertop* | detailed insights for all type of hardware
-- *Pi-Bolt Llmfit* | llm harness, pre-compiled Pi Agent for maximum speed with plugins; local llm tui research tool
+- *Siltide, Amdtop, Nvtop, Btop, Radeontop, S-tui, Powertop* | detailed insights for all type of hardware
+- *Pi-Bolt, Llmfit* | llm harness, pre-compiled Pi Agent for maximum speed with plugins; local llm tui research tool
 - *Tailscale* | wireguard infused protocol, vpn, secure access, and pseudo-local networking
-- *Wrkflw Upmd Gama* | run & manage GH actions locally with MD, and monitor remote GH actions in the terminal
-- *Glow Treemd Mdtt* | render MD, see it side-by-side, or create MD tables, all in the terminal
-- *Kmon Netop Lazyjournal* | constructively useful administrative tools
+- *Wrkflw, Upmd, Gama* | run & manage GH actions locally with MD, and monitor remote GH actions in the terminal
+- *Glow, Treemd, Mdtt* | render MD, see it side-by-side, or create MD tables, all in the terminal
+- *Kmon, Netop, Lazyjournal* | constructively useful administrative tools
 - *Eget* | add binaries to the immutable system quickly
-- *Pastel Termpicker* | color picker, color-code converter, color-code look-up tool - all in the terminal
+- *Pastel, Termpicker* | color picker, color-code converter, color-code look-up tool - all in the terminal
 
 - *Rhun* | IDE written in assembly, truly absurd speed in a slim footprint
 - *Kitty* | terminal emulator, preconfigured for Celestial-Uprising and assigned to `CapsLock+Enter`
