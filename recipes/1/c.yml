@@ -149,7 +149,7 @@ modules:
   - type: script
     scripts:
       - corgi.sh
-      - pibolt.sh
+      - pi-bolt.sh
       - regenerateinitramfs.sh
-  - type: wayblue-signing
+  - type: signing
     source: local
