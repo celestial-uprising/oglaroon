@@ -29,7 +29,6 @@ modules:
         - alsa-sof-firmware
         - bluez-libs
         - pulseaudio-libs
-        - calcurse
         - sddm
         - xdg-desktop-portal-gnome
         - xdg-desktop-portal-gtk
@@ -75,14 +74,6 @@ modules:
         - alsa-firmware
         - wireplumber
         - flatpak
-  - type: default-flatpaks
-    configurations:
-      - notify: true
-        scope: system
-        install:
-          - de.haeckerfelix.Shortwave
-          - net.codelogistics.webapps
-          - app.zen_browser.zen
   - type: script
     scripts:
       - rhun.sh

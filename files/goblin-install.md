@@ -11,3 +11,4 @@ go install github.com/chojs23/ec/cmd/ec@latest
 go install github.com/fumiyas/qrc/cmd/qrc
 go install github.com/ashish0kumar/stormy@latest
 go install github.com/maaslalani/sheets@main
+go install github.com/alvinunreal/lazyskills/cmd/lazyskills@latest

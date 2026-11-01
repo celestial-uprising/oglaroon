@@ -1,9 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
+RELEASE="https://github.com/zen-browser/desktop/releases/zen.linux-x86_64.tar.xz"
 TAR="zen.linux-x86_64.tar.xz"
-TARBALL="https://github.com/zen-browser/desktop/releases/download/1.24b/$TAR"
-DIR="/tmp"
-cd "$DIR"
-wget "$TARBALL"
-tar xf "$TAR"
-cp -r zen /opt/
+DIR=$(mktemp -d)
+trap 'rm -rf "$DIR"' EXIT
+DOWNLOAD_FILE="${DIR}/${TAR}"
+curl -fsSL "${RELEASE}" -o "${DOWNLOAD_FILE}"
+mkdir -p "${DIR}/zen-extracted"
+tar -xf "${DOWNLOAD_FILE}" -C "${DIR}/zen-extracted"
+rm -rf /opt/zen
+cp -r "${DIR}/zen-extracted/zen" /opt/zen/
+cd /opt/zen
+[ -e zen ] || ln -sf zen-bin zen
+[ -e zen-bin ] || ln -sf zen zen-bin
+mkdir -p /usr/share/applications
+cp /tmp/zen-browser.desktop /usr/share/applications/zen-browser.desktop
+mkdir -p /usr/share/icons/hicolor/scalable/apps
+cp /opt/zen/icons/updater.png /usr/share/icons/hicolor/scalable/apps/zen-browser.png
+update-desktop-database /usr/share/applications 2>/dev/null || true
+update-mime-database /usr/share/mime 2>/dev/null || true
