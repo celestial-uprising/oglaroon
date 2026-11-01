@@ -56,7 +56,7 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b04 by Celestial Uprising"
+      PRETTY_NAME: "Oglaroon b05 by Celestial Uprising"
       VERSION_CODENAME: "crabcake"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"

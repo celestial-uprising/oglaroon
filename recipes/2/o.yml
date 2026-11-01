@@ -78,6 +78,7 @@ modules:
     scripts:
       - rhun.sh
       - zen.sh
+      - annoyances-2.sh
   - type: files
     files:
       - source: system/

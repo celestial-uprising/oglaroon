@@ -5,5 +5,5 @@ cosign.private
 *.iso-CHECKSUM
 /.bluebuild-scripts_*
 *.bak
-/files/*.rpm
-/files/*.tar
+/files/aocc-tar/*.sh
+/files/aocc-rpm/*.sh
