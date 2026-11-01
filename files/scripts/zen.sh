@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-RELEASE="https://github.com/zen-browser/desktop/releases/zen.linux-x86_64.tar.xz"
+RELEASE="https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.xz"
 TAR="zen.linux-x86_64.tar.xz"
 DIR=$(mktemp -d)
 trap 'rm -rf "$DIR"' EXIT
