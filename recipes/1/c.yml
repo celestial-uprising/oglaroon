@@ -110,10 +110,6 @@ modules:
         - VictorMono
   - type: files
     files:
-      - source: system/etc/containers/containers.conf.d/99-youki.conf
-        destination: /etc/containers/containers.conf.d/99-youki.conf
-  - type: files
-    files:
       - source: system/usr/lib/bash/libflyline
         destination: /usr/lib/bash/libflyline.so
   - type: files

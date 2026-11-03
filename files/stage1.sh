@@ -43,14 +43,7 @@ dnf5 install -y just git \
 	elfutils-libelf-devel libseccomp-devel \
 	clang-devel openssl-devel
 
-git clone https://github.com/youki-dev/youki.git /tmp/youki
-cd /tmp/youki
-just youki-release
-cp target/release/youki /tmp/bin
-
 chmod +x /tmp/bin/*
-
-rm -rf /tmp/youki
 
 dnf remove -y cargo rustc \
 	golang pkg-config \
@@ -58,9 +51,6 @@ dnf remove -y cargo rustc \
 	cmake tar gzip curl \
 	libdrm-devel libpcap-devel \
 	openssl-devel zlib-devel \
-	alsa-lib-devel just git \
-	pkg-config systemd-devel \
-	elfutils-libelf-devel libseccomp-devel \
-	clang-devel openssl-devel jack-audio-connection-kit-devel
+	alsa-lib-devel jack-audio-connection-kit-devel
 
 dnf clean all
