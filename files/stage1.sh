@@ -10,7 +10,7 @@ dnf5 upgrade -y && dnf5 install -y \
 	cmake tar gzip curl \
 	libdrm-devel libpcap-devel \
 	openssl-devel zlib-devel \
-	alsa-lib-devel 
+	alsa-lib-devel jack-audio-connection-kit-devel
 
 curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
 
@@ -61,6 +61,6 @@ dnf remove -y cargo rustc \
 	alsa-lib-devel just git \
 	pkg-config systemd-devel \
 	elfutils-libelf-devel libseccomp-devel \
-	clang-devel openssl-devel
+	clang-devel openssl-devel jack-audio-connection-kit-devel
 
 dnf clean all
