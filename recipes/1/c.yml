@@ -76,6 +76,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - glibc-langpack-en
         - podman-compose
         - podman-docker
         - podman-remote
