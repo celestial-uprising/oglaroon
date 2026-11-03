@@ -38,7 +38,7 @@ stages:
                   $line --root /tmp
                   ;;
               esac
-            done < "$MD_FILE"
+            done < "$MD_FILE1"
             MD_FILE2="/tmp/goblin-install.md"
             if [ -f "$MD_FILE2" ]; then
               while read -r line || [ -n "$line" ]; do
@@ -56,7 +56,7 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b07 by Celestial Uprising"
+      PRETTY_NAME: "Oglaroon b08 by Celestial Uprising"
       VERSION_CODENAME: "staypuft"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
@@ -76,7 +76,21 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - zram-generator-defaults
+        - podman-compose
+        - podman-docker
+        - podman-remote
+        - buildah
+        - skopeo
+        - crun
+        - cryptsetup
+        - lvm2
+        - btrfs-progs
+        - bind-utils
+        - sysstat
+        - strace
+        - tcpdump
+        - amd-ucode
+        - intel-ucode
         - whois
         - distrobox
         - sshfs
@@ -84,11 +98,16 @@ modules:
         - iw
         - iwd
         - iwlwifi-mvm-firmware
+        - iwlbluetooth-firmware
+        - realtek-firmware
+        - mediatek-firmware
+        - mt7xxx-firmware
+        - atheros-firmware
+        - brcmfmac-firmware
         - NetworkManager-wifi
         - pciutils
         - usbutils
         - kernel-modules-extra
-        - glibc-langpack-en
         - tailscale
         - libvirt-client
         - vim
@@ -146,6 +165,13 @@ modules:
     files:
       - source: system/etc/profile.d/aliases.sh
         destination: /etc/profile.d/
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled.service
+    user:
+      enabled:
+        - podman.socket
   - type: script
     scripts:
       - corgi.sh
