@@ -37,20 +37,3 @@ GOBIN=/tmp/bin go install github.com/ashish0kumar/stormy@latest
 GOBIN=/tmp/bin go install github.com/maaslalani/sheets@main
 GOBIN=/tmp/bin go install github.com/alvinunreal/lazyskills/cmd/lazyskills@latest
 GOBIN=/tmp/bin go install github.com/wagoodman/dive@latest
-
-dnf5 install -y just git \
-	pkg-config systemd-devel \
-	elfutils-libelf-devel libseccomp-devel \
-	clang-devel openssl-devel
-
-chmod +x /tmp/bin/*
-
-dnf remove -y cargo rustc \
-	golang pkg-config \
-	make gcc-c++ \
-	cmake tar gzip curl \
-	libdrm-devel libpcap-devel \
-	openssl-devel zlib-devel \
-	alsa-lib-devel jack-audio-connection-kit-devel
-
-dnf clean all
