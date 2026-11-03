@@ -58,7 +58,7 @@ jobs:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
-          maximize_build_space: false
+          maximize_build_space: true
   stage_three:
     name: Building Stage 3 Images
     runs-on: ubuntu-latest
@@ -81,7 +81,7 @@ jobs:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
-          maximize_build_space: false
+          maximize_build_space: true
   stage_four:
     name: Building Stage 4 Images
     runs-on: ubuntu-latest
@@ -102,4 +102,4 @@ jobs:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
-          maximize_build_space: false
+          maximize_build_space: true
