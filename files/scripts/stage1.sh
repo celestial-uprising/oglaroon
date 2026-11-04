@@ -21,17 +21,15 @@ ingrid="cargo install --root /tmp"
 $ingrid --git https://github.com/rezigned/upmd.git
 $ingrid amdtop
 $ingrid netop
-$ingrid --git https://github.com/pamburus/termframe.git
 $ingrid terminal_gameboy
 $ingrid zellij
 $ingrid asak
 
-cargo binstall --root /tmp  wrkflw kmon treemd llmfit yazi-fm yazi-cli presenterm trippy viddy xan doxx diskonaut git-interactive-rebase-tool xleak bookokrat wiki-tui darya serie
+cargo binstall --root /tmp  wrkflw kmon treemd llmfit yazi-fm yazi-cli viddy xan doxx diskonaut xleak serie
 
 raelynn="env GOBIN=/tmp/bin go install"
 
 $raelynn github.com/moezdil/siltide@latest
-$raelynn github.com/ChausseBenjamin/termpicker@latest
 $raelynn github.com/szktkfm/mdtt/cmd/mdtt@latest
 $raelynn github.com/zyedidia/eget@latest
 $raelynn github.com/Lifailon/lazyjournal@latest
@@ -41,7 +39,5 @@ $raelynn github.com/charmbracelet/glow/v2@latest
 $raelynn github.com/kencx/keyb@latest
 $raelynn github.com/chojs23/ec/cmd/ec@latest
 $raelynn github.com/fumiyas/qrc/cmd/qrc@latest
-$raelynn github.com/ashish0kumar/stormy@latest
-$raelynn github.com/maaslalani/sheets@main
 $raelynn github.com/alvinunreal/lazyskills/cmd/lazyskills@latest
 $raelynn github.com/wagoodman/dive@latest
