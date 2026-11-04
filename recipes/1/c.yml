@@ -38,6 +38,8 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - firewalld
+        - nftables
         - zram-generator-defaults
         - glibc-langpack-en
         - podman-compose
@@ -129,6 +131,8 @@ modules:
     system:
       enabled:
         - tailscaled.service
+        - firewalld.service
+        - iwd.service
     user:
       enabled:
         - podman.socket

@@ -24,7 +24,6 @@ $ingrid netop
 $ingrid --git https://github.com/pamburus/termframe.git
 $ingrid terminal_gameboy
 $ingrid zellij
-$ingrid --git https://github.com/herdrdev/herdr
 $ingrid asak
 
 cargo binstall --root /tmp  wrkflw kmon treemd llmfit yazi-fm yazi-cli presenterm trippy viddy xan doxx diskonaut git-interactive-rebase-tool xleak bookokrat wiki-tui darya serie
