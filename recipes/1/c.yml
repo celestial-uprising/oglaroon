@@ -3,23 +3,27 @@ description: Celestial Uprising's Immutable Operating System
 base-image: quay.io/fedora/fedora-bootc
 image-version: rawhide
 stages:
-  - name: stage1
+  - name: builder
     from: quay.io/fedora/fedora:rawhide
     modules:
       - type: copy
-        src: files/stage1.sh
+        src: files/scripts/stage1.sh
         dest: /tmp/stage1.sh
+      - type: copy
+        src: files/scripts/stage2.sh
+        dest: /tmp/stage2.sh
       - type: script
         snippets:
           - mkdir -p /tmp/bin
           - |
             bash /tmp/stage1.sh
+            bash /tmp/stage2.sh
 modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b10 by Celestial Uprising"
-      VERSION_CODENAME: "crabapple"
+      PRETTY_NAME: "Oglaroon b11 by Celestial Uprising"
+      VERSION_CODENAME: "pixiestik"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -104,7 +108,7 @@ modules:
         - nodejs
         - npm
   - type: copy
-    from: stage1
+    from: builder
     src: /tmp/bin/
     dest: /usr/bin/
   - type: fonts
@@ -138,7 +142,6 @@ modules:
         - podman.socket
   - type: script
     scripts:
-      - corgi.sh
       - pi-bolt.sh
       - annoyances.sh
       - regenerateinitramfs.sh
