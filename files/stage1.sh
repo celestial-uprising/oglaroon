@@ -29,7 +29,7 @@ $ingrid asak
 
 cargo binstall --root /tmp  wrkflw kmon treemd llmfit yazi-fm yazi-cli presenterm trippy viddy xan doxx diskonaut git-interactive-rebase-tool xleak bookokrat wiki-tui darya serie
 
-raelynn="GOBIN=/tmp/bin go install"
+raelynn="env GOBIN=/tmp/bin go install"
 
 $raelynn github.com/moezdil/siltide@latest
 $raelynn github.com/ChausseBenjamin/termpicker@latest
