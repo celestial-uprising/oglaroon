@@ -11,7 +11,8 @@ dnf5 upgrade -y && dnf5 install -y \
 	libdrm-devel libpcap-devel \
 	openssl-devel zlib-devel \
 	alsa-lib-devel zig \
-	jack-audio-connection-kit-devel
+	jack-audio-connection-kit-devel \
+	perl perl-FindBin gcc 
 
 curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
 
