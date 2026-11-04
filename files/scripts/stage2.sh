@@ -14,5 +14,3 @@ bun build.ts
 mkdir -p "$(dirname "$BINARY_DEST")"
 cp dist/corgi "$BINARY_DEST"
 chmod +x "$BINARY_DEST"
-cp /tmp/corgi/dist/corgi /tmp/bin/corgi
-rm -rf /tmp/corgi
