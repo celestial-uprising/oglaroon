@@ -18,8 +18,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b09 by Celestial Uprising"
-      VERSION_CODENAME: "dragonsbreath"
+      PRETTY_NAME: "Oglaroon b10 by Celestial Uprising"
+      VERSION_CODENAME: "crabapple"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -38,6 +38,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - zram-generator-defaults
         - glibc-langpack-en
         - podman-compose
         - podman-docker
