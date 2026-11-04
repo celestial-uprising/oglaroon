@@ -1,6 +1,6 @@
 # Celestial Uprising's Bleeding-Edge Release Track &nbsp; [![bluebuild build badge](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml/badge.svg)](https://github.com/celestial-uprising/oglaroon/actions/workflows/build.yml)
 
-## *Fedora-Bootc Rawhide* + *AMD's AOCC Compiler* + *Lesbidoodle Rabbit Coven Magic* = *Oglaroon*
+## *Fedora-Bootc Rawhide* + *Lesbidoodle Rabbit Coven Magic* = *Oglaroon*
 
 - *Yazi* | rapid & beautiful rusty file-manager 
 - *Flyline* | bash plugin, cause thinking shouldn't require spelling degrees
@@ -49,7 +49,7 @@
 | hostid | spin | cpu | memory | gpus |
 | :--- | :--- | :--- | :--- | :--- |
 |rhiannon|oglaroon|AMD A4-9120*c* R4 2C+3G *2c/2t*|4GiB *1866MHz*|Radeon iGPU|
-|bella|oglaroon-headless|AMD Ryzen 7 5700*g* *8c/16t*|128GiB *3200MHz*|Vega iGPU + RX 580 *8GiB*|
+|bella|lalamatine-dev|AMD Ryzen 7 5700*g* *8c/16t*|128GiB *3200MHz*|Vega iGPU + *RX*580 *8GiB*|
 |lily|oglaroon-virt|AMD EPYC Virtualized *6c/6t*|12GiB *virtualized*|---|
 
 - *temporarily reassigned to testing and development related to Ubuntu 27.04 Tenacious T-Rex*
