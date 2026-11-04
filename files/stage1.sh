@@ -15,7 +15,7 @@ dnf5 upgrade -y && dnf5 install -y \
 
 curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
 
-ingrid="cargo install --root /tmp --locked --release"
+ingrid="cargo install --root /tmp --locked "
 
 $ingrid --git https://github.com/rezigned/upmd.git
 $ingrid amdtop
