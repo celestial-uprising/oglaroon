@@ -7,8 +7,8 @@ dnf install -y \
   mpv-devel
 
 git clone https://github.com/abenz1267/elephant.git /tmp/elephant
-cd /tmp/elephant
-env GOBIN=/tmp/bin go build -o elephant cmd/elephant.go
+cd /tmp/elephant/cmd/elephant
+env GOBIN=/tmp/bin go install elephant 
 
 git clone https://github.com/abenz1267/walker.git /tmp/walker
 cd /tmp/walker
