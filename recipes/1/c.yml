@@ -142,7 +142,6 @@ modules:
         - tailscaled.service
         - firewalld.service
         - iwd.service
-        - elephant.service
     user:
       enabled:
         - podman.socket
