@@ -1,0 +1,93 @@
+{
+  "position": "top",
+  "height": 20,
+  "layer": "background",
+  "margin.left": 10,
+  "margin.right": 10,
+  "margin.top": 5,
+  "start": [
+    {
+      "type": "menu",
+      "label": " ",
+      "start": [
+        {
+          "type": "custom",
+          "label": "  Terminal",
+          "on_click": "ghostty"
+        },
+        {
+          "type": "custom",
+          "label": " Reboot",
+          "on_click": "systemctl reboot"
+        },
+        {
+          "type": "custom",
+          "label": "  Power Off",
+          "on_click": "systemctl poweroff"
+        }
+      ],
+      "center": [],
+      "end": []
+    },
+    {
+      "type": "custom",
+      "bar": [
+        {
+          "type": "label",
+          "label": " 󰿟 ",
+          "class": "divider"
+        }
+      ]
+    },
+    {
+      "type": "workspaces"
+    }
+  ],
+  "center": [
+    {
+      "type": "focused",
+      "icon_size": 14,
+      "truncate": "end"
+    }
+  ],
+  "end": [
+    {
+      "type": "tray"
+    },
+    {
+      "type": "custom",
+      "bar": [
+        {
+          "type": "label",
+          "label": " 󰿟 ",
+          "class": "divider"
+        }
+      ]
+    },
+    {
+      "type": "volume",
+      "format": "{icon}  {percentage}%",
+      "max_volume": 100,
+      "icons": {
+        "muted": "",
+        "volume_low": "",
+        "volume_medium": "",
+        "volume_high": ""
+      }
+    },
+    {
+      "type": "custom",
+      "bar": [
+        {
+          "type": "label",
+          "label": " 󰿟 ",
+          "class": "divider"
+        }
+      ]
+    },
+    {
+      "type": "clock",
+      "format": "%H:%M"
+    }
+  ]
+}

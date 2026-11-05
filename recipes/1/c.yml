@@ -22,8 +22,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b11 by Celestial Uprising"
-      VERSION_CODENAME: "pixiestik"
+      PRETTY_NAME: "Oglaroon b12 by Celestial Uprising"
+      VERSION_CODENAME: "gummybear"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -39,9 +39,15 @@ modules:
       - kvm.ignore_msrs=1
       - net.ifnames=0
   - type: dnf
+    repos:
+      copr:
+        - rossetnocpes/herdr
+        - varlad/zellij
     install:
       install-weak-deps: false
       packages:
+        - herdr
+        - zellij
         - firewalld
         - nftables
         - zram-generator-defaults
