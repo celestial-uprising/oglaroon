@@ -12,16 +12,12 @@ stages:
       - type: copy
         src: files/scripts/stage2.sh
         dest: /tmp/stage2.sh
-      - type: copy
-        src: files/scripts/stage3.sh
-        dest: /tmp/stage3.sh
       - type: script
         snippets:
           - mkdir -p /tmp/bin
           - |
             bash /tmp/stage1.sh
             bash /tmp/stage2.sh
-            bash /tmp/stage3.sh
 modules:
   - type: os-release
     properties:
@@ -146,6 +142,7 @@ modules:
         - tailscaled.service
         - firewalld.service
         - iwd.service
+        - elephant.service
     user:
       enabled:
         - podman.socket
