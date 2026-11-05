@@ -46,6 +46,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - gtk4-layer-shell
         - herdr
         - zellij
         - firewalld
