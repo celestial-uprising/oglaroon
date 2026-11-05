@@ -2,12 +2,9 @@
 set -oue pipefail
 
 dnf install -y \
-  gtk4-devel \
   protobuf-compiler \
-  cairo-devel \
   poppler-glib-devel \
-  pixman-devel \
-  libmpv-devel
+  mpv-devel
 
 git clone https://github.com/abenz1267/elephant.git /tmp/elephant
 cd /tmp/elephant
