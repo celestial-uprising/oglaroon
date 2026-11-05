@@ -13,7 +13,5 @@ cp -r "${DIR}/zen-extracted/zen" /opt/zen/
 cd /opt/zen
 [ -e zen ] || ln -sf zen-bin zen
 [ -e zen-bin ] || ln -sf zen zen-bin
-mkdir -p /usr/share/icons/hicolor/scalable/apps
-cp /opt/zen/icons/updater.png /usr/share/icons/hicolor/scalable/apps/zen-browser.png
 update-desktop-database /usr/share/applications 2>/dev/null || true
 update-mime-database /usr/share/mime 2>/dev/null || true

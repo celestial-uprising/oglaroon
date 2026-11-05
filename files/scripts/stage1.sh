@@ -4,11 +4,19 @@ set -oue pipefail
 mkdir -p /tmp/bin
 
 dnf5 upgrade -y && dnf5 install -y \
-	cargo rustc \
-	golang pkg-config \
-	make gcc-c++ \
-	cmake tar gzip curl \
-	libdrm-devel libpcap-devel \
+	gtk4-layer-shell-devel \
+	cargo \
+	rustc \
+	golang \
+	pkg-config \
+	make \
+	gcc-c++ \
+	cmake \
+	tar \
+	gzip \
+	curl \
+	libdrm-devel \
+	libpcap-devel \
 	alsa-lib-devel \
 	pipewire-jack-audio-connection-kit-devel
 

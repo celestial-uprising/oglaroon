@@ -12,18 +12,22 @@ stages:
       - type: copy
         src: files/scripts/stage2.sh
         dest: /tmp/stage2.sh
+      - type: copy
+        src: files/scripts/stage3.sh
+        dest: /tmp/stage3.sh
       - type: script
         snippets:
           - mkdir -p /tmp/bin
           - |
             bash /tmp/stage1.sh
             bash /tmp/stage2.sh
+            bash /tmp/stage3.sh
 modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b12 by Celestial Uprising"
-      VERSION_CODENAME: "gummybear"
+      PRETTY_NAME: "Oglaroon b13 by Celestial Uprising"
+      VERSION_CODENAME: "ironbru"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -41,13 +45,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        - rossetnocpes/herdr
         - varlad/zellij
     install:
       install-weak-deps: false
       packages:
         - gtk4-layer-shell
-        - herdr
         - zellij
         - firewalld
         - nftables
