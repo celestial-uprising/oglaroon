@@ -54,7 +54,12 @@ modules:
   - type: systemd
     system:
       enabled:
-        - libvirtd.service
+        - virtqemud.socket
+        - virtnetworkd.socket
+        - virtnodedevd.socket
+        - virtsecretd.socket
+        - virtstoraged.socket
+        - virtqemud.service
   - type: script
     scripts:
       - regenerateinitramfs.sh
