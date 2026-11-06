@@ -1,21 +1,18 @@
 #!/usr/bin/env bash
 set -oue pipefail
 
-dnf upgrade -y && dnf install -y \
-    cargo \
-    rust \
-    git \
-    gcc \
-    pkg-config \
-    gtk4-devel \
-    gtk4-layer-shell-devel \
-    pango-devel \
-    cairo-devel
+mkdir -p /tmp/bin
 
-git clone https://github.com/anyrun-org/anyrun /tmp/anyrun
-cd /tmp/anyrun
-cargo build --release
-cp /tmp/anyrun/target/release/anyrun /tmp/bin/anyrun
-mkdir -p /tmp/anyrun-plugins
-cp /tmp/anyrun/target/release/*.so /tmp/anyrun-plugins/
+dnf5 upgrade -y && dnf5 install -y \
+	gtk4-devel \
+	openssl-devel \
+	cargo \
+	rustc \
+	git \
+	gtk4-layer-shell-devel \
+	dbus-devel \
+	sqlite-devel \
+	librsvg2-devel \
+	gdk-pixbuf2-devel
 
+cargo install --root /tmp --git https://github.com/skxxtz/sherlock.git

@@ -22,8 +22,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b15 by Celestial Uprising"
-      VERSION_CODENAME: "marmalade"
+      PRETTY_NAME: "Oglaroon b16 by Celestial Uprising"
+      VERSION_CODENAME: "starburst"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"

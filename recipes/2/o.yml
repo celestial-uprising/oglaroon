@@ -31,6 +31,10 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - dbus-libs
+        - sqlite-libs
+        - librsvg2
+        - gdk-pixbuf2
         - gtk4 
         - gtk4-layer-shell
         - google-noto-sans-fonts
@@ -95,10 +99,6 @@ modules:
     from: builder
     src: /tmp/bin/
     dest: /usr/bin/
-  - type: copy
-    from: builder
-    src: /tmp/anyrun-plugins/
-    dest: /etc/anyrun/plugins/
   - type: script
     scripts:
       - rhun.sh
