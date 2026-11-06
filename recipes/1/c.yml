@@ -22,8 +22,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b14 by Celestial Uprising"
-      VERSION_CODENAME: "candyglass"
+      PRETTY_NAME: "Oglaroon b15 by Celestial Uprising"
+      VERSION_CODENAME: "marmalade"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -101,9 +101,6 @@ modules:
         - gdu
         - pastel
         - git
-        - make
-        - gcc
-        - fontconfig-devel
         - wget
         - plymouth-theme-spinner
         - nodejs
