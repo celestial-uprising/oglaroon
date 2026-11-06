@@ -27,6 +27,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - gtk4-layer-shell
         - google-noto-sans-fonts
         - google-noto-serif-fonts
         - niri
