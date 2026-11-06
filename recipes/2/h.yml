@@ -49,6 +49,12 @@ modules:
         destination: /etc/udev/rules.d/99-cpu-governor.rules
       - source: 99-workstation-perf.conf
         destination: /etc/sysctl.d/99-workstation-perf.conf
+      - source: system/usr/lib/tmpfiles.d/libvirt-dnsmasq.conf
+        destination: /usr/lib/tmpfiles.d/
+  - type: systemd
+    system:
+      enabled:
+        - libvirtd.service
   - type: script
     scripts:
       - regenerateinitramfs.sh
