@@ -3,6 +3,18 @@ name: oglaroon
 description: Celestial Uprising's Immutable Operating System
 base-image: ghcr.io/celestial-uprising/oglaroon-core
 image-version: latest
+stages:
+  - name: builder
+    from: quay.io/fedora/fedora:rawhide
+    modules:
+      - type: copy
+        src: files/scripts/stage3.sh
+        dest: /tmp/stage3.sh
+      - type: script
+        snippets:
+          - mkdir -p /tmp/bin
+          - |
+            bash /tmp/stage3.sh
 modules:
   - type: os-release
     properties:
@@ -34,7 +46,6 @@ modules:
         - xdg-desktop-portal-gtk
         - xfce-polkit
         - rofi-wayland
-        - waybar
         - dunst
         - swaybg
         - swaylock
@@ -74,6 +85,10 @@ modules:
         - alsa-firmware
         - wireplumber
         - flatpak
+  - type: copy
+    from: builder
+    src: /tmp/bin/
+    dest: /usr/bin/
   - type: script
     scripts:
       - rhun.sh

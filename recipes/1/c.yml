@@ -22,8 +22,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b13 by Celestial Uprising"
-      VERSION_CODENAME: "ironbru"
+      PRETTY_NAME: "Oglaroon b14 by Celestial Uprising"
+      VERSION_CODENAME: "candyglass"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -39,14 +39,11 @@ modules:
       - kvm.ignore_msrs=1
       - net.ifnames=0
   - type: dnf
-    repos:
-      copr:
-        - varlad/zellij
     install:
       install-weak-deps: false
       packages:
         - gtk4-layer-shell
-        - zellij
+        - tmux
         - firewalld
         - nftables
         - zram-generator-defaults

@@ -1,7 +1,7 @@
 :root {
-    --color-dark-primary: #313244;
-    --color-dark-secondary: #181825;
-    --color-white: #b4befe;
+    --color-dark-primary: #1a1110;
+    --color-dark-secondary: #1a111088;
+    --color-white: #ffb4ab;
     --color-active: #b4befe;
     --color-urgent: #f38ba8;
 
@@ -20,7 +20,7 @@
     border-radius: 0;
     box-shadow: none;
     background-image: none;
-    font-family: "Hack-ZeroSlash";
+    font_family: "VictorMono Nerd Font Mono":
     font-size: var(--font-md);
     font-weight: bold;
 }

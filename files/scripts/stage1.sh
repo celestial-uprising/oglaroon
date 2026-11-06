@@ -30,7 +30,7 @@ $ingrid netop
 $ingrid terminal_gameboy
 $ingrid asak
 
-cargo binstall --root /tmp ironbar wrkflw kmon treemd llmfit yazi-fm yazi-cli viddy xan doxx diskonaut xleak serie
+cargo binstall --root /tmp wrkflw kmon treemd llmfit yazi-fm yazi-cli viddy xan doxx diskonaut xleak serie
 
 raelynn="env GOBIN=/tmp/bin go install"
 
