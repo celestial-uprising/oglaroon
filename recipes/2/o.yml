@@ -8,9 +8,6 @@ stages:
     from: quay.io/fedora/fedora:rawhide
     modules:
       - type: copy
-        src: files/scripts/stage3.sh
-        dest: /tmp/stage3.sh
-      - type: copy
         src: files/scripts/stage4.sh
         dest: /tmp/stage4.sh
       - type: script
@@ -18,7 +15,6 @@ stages:
           - mkdir -p /tmp/bin
           - |
             bash /tmp/stage3.sh
-            bash /tmp/stage4.sh
 modules:
   - type: os-release
     properties:
@@ -55,7 +51,6 @@ modules:
         - xdg-desktop-portal-gnome
         - xdg-desktop-portal-gtk
         - xfce-polkit
-        - rofi-wayland
         - dunst
         - swaybg
         - swaylock

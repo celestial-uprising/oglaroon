@@ -33,7 +33,6 @@ layout {
         off
     }
   }
-spawn-at-startup "/usr/bin/ironbar" 
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/etc/default/background"
 spawn-at-startup "dunst"
 spawn-at-startup "/usr/libexec/xfce-polkit"
@@ -84,7 +83,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return hotkey-overlay-title="Spawn Kitty" { spawn "kitty" "--title" "Meow!"; }
-    Mod+D hotkey-overlay-title="Run an Application" { spawn "rofi" "-show" "drun" "-show-icons"; }
+    Mod+D hotkey-overlay-title="Run an Application" { spawn "sherlock"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Alt+F10 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     Alt+F9 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
