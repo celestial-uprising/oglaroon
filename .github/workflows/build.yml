@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 1/c.yml
+          - 2/o.yml
     steps:
       - name: Building Stage 1 Images
         uses: blue-build/github-action@v1.13
@@ -44,9 +44,9 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 2/o.yml
-          - 2/v.yml
-          - 2/h.yml
+          - 3/d.yml
+          - 3/m.yml
+          - 3/g.yml
     steps:
       - name: Building Stage 2 Images
         uses: blue-build/github-action@v1.13
@@ -67,9 +67,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 3/d.yml
-          - 3/m.yml
-          - 3/g.yml
+          - 4/u.yml
     steps:
       - name: Building Stage 3 Images
         uses: blue-build/github-action@v1.13
@@ -90,7 +88,6 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 4/u.yml
     steps:
       - name: Building Stage 4 Images
         uses: blue-build/github-action@v1.13
