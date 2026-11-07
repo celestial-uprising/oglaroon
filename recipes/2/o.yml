@@ -8,13 +8,13 @@ stages:
     from: quay.io/fedora/fedora:rawhide
     modules:
       - type: copy
-        src: files/scripts/stage4.sh
-        dest: /tmp/stage4.sh
+        src: files/scripts/stage3.sh
+        dest: /tmp/stage3.sh
       - type: script
         snippets:
           - mkdir -p /tmp/bin
           - |
-            bash /tmp/stage4.sh
+            bash /tmp/stage3.sh
 modules:
   - type: os-release
     properties:
@@ -27,12 +27,9 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - dbus-libs
-        - sqlite-libs
-        - librsvg2
-        - gdk-pixbuf2
         - gtk4 
         - gtk4-layer-shell
+        - rofi-wayland
         - google-noto-sans-fonts
         - google-noto-serif-fonts
         - niri
@@ -98,6 +95,7 @@ modules:
     scripts:
       - rhun.sh
       - zen.sh
+      - perm-fix.sh
       - annoyances-2.sh
   - type: files
     files:
