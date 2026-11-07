@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -oue pipefail
 mkdir -p /tmp/bin
-dnf5 upgrade -y && dnf5 install -y 
+dnf5 install -y \
     cargo \
     rustc \
     git \
