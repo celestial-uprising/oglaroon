@@ -14,7 +14,7 @@ stages:
         snippets:
           - mkdir -p /tmp/bin
           - |
-            bash /tmp/stage3.sh
+            bash /tmp/stage4.sh
 modules:
   - type: os-release
     properties:
