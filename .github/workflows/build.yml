@@ -76,23 +76,3 @@ jobs:
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           maximize_build_space: true
-  stage_four:
-    name: Building Stage 4 Images
-    runs-on: ubuntu-latest
-    needs: stage_three
-    permissions:
-      contents: read
-      packages: write
-      id-token: write
-    strategy:
-      fail-fast: false
-      matrix:
-        recipe:
-    steps:
-      - name: Building Stage 4 Images
-        uses: blue-build/github-action@v1.13
-        with:
-          recipe: ${{ matrix.recipe }}
-          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
-          registry_token: ${{ github.token }}
-          maximize_build_space: true
