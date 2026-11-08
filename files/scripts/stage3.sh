@@ -3,22 +3,8 @@ set -oue pipefail
 
 mkdir -p /tmp/bin
 
-dnf5 install -y \
-	cargo \
-	rustc \
-	git \
-	gcc \
-	pkgconf-pkg-config \
-	gtk4-devel \
-	gtk4-layer-shell-devel \
-	glib2-devel \
-	cairo-devel \
-	gdk-pixbuf2-devel \
-	dbus-devel \
-	libinput-devel \
-	libevdev-devel \
-	pulseaudio-libs-devel \
-	luajit \
-	luajit-devel
+dnf5 install -y cargo
 
-cargo install --root /tmp ironbar
+curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
+
+cargo binstall --root /tmp ironbar
