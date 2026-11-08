@@ -7,23 +7,23 @@ stages:
     from: quay.io/fedora/fedora:rawhide
     modules:
       - type: copy
-        src: files/scripts/stage1.sh
-        dest: /tmp/stage1.sh
-      - type: copy
-        src: files/scripts/stage2.sh
-        dest: /tmp/stage2.sh
+        src: files/scripts/stage1/*
+        dest: /tmp/
       - type: script
         snippets:
           - mkdir -p /tmp/bin
+          - dnf5 upgrade -y
           - |
-            bash /tmp/stage1.sh
-            bash /tmp/stage2.sh
+            bash /tmp/cargo.sh
+            bash /tmp/binstall.sh
+            bash /tmp/golang.sh
+            bash /tmp/corgi.sh
 modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b17 by Celestial Uprising"
-      VERSION_CODENAME: "nerd"
+      PRETTY_NAME: "Oglaroon b18 by Celestial Uprising"
+      VERSION_CODENAME: "strawbalotl"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
@@ -39,13 +39,9 @@ modules:
       - kvm.ignore_msrs=1
       - net.ifnames=0
   - type: dnf
-    repos:
-      copr:
-        - varlad/zellij
     install:
       install-weak-deps: false
       packages:
-        - zellij
         - firewalld
         - nftables
         - zram-generator-defaults
@@ -118,19 +114,19 @@ modules:
         - VictorMono
   - type: files
     files:
-      - source: system/usr/lib/bash/libflyline
+      - source: usr/lib/bash/libflyline
         destination: /usr/lib/bash/libflyline.so
   - type: files
     files:
-      - source: system/etc/profile.d/flyline.sh
+      - source: etc/profile.d/flyline.sh
         destination: /etc/profile.d/
   - type: files
     files:
-      - source: system/etc/profile.d/locale.sh
+      - source: etc/profile.d/locale.sh
         destination: /etc/profile.d/
   - type: files
     files:
-      - source: system/etc/profile.d/aliases.sh
+      - source: etc/profile.d/aliases.sh
         destination: /etc/profile.d/
   - type: systemd
     system:

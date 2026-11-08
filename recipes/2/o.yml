@@ -8,13 +8,14 @@ stages:
     from: quay.io/fedora/fedora:rawhide
     modules:
       - type: copy
-        src: files/scripts/stage3.sh
-        dest: /tmp/stage3.sh
+        src: files/scripts/stage2/*
+        dest: /tmp/
       - type: script
         snippets:
           - mkdir -p /tmp/bin
+          - dnf5 upgrade -y
           - |
-            bash /tmp/stage3.sh
+            bash /tmp/ironbar.sh
 modules:
   - type: os-release
     properties:
@@ -99,8 +100,12 @@ modules:
       - annoyances-2.sh
   - type: files
     files:
-      - source: system/
-        destination: /
+      - source: etc/
+        destination: /etc/
+  - type: files
+    files:
+      - source: usr/
+        destination: /usr/
   - type: systemd
     system:
       enabled:

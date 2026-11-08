@@ -20,7 +20,7 @@ modules:
         - qemu-guest-agent
   - type: files
     files:
-      - source: dracut-virtio.conf
+      - source: extras/dracut-virtio.conf
         destination: /etc/dracut.conf.d/virtio.conf
   - type: script
     scripts:

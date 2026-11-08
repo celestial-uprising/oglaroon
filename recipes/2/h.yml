@@ -45,11 +45,11 @@ modules:
         - ffmpeg
   - type: files
     files:
-      - source: 99-cpu-governor.rules
+      - source: extras/99-cpu-governor.rules
         destination: /etc/udev/rules.d/99-cpu-governor.rules
-      - source: 99-workstation-perf.conf
+      - source: extras/99-workstation-perf.conf
         destination: /etc/sysctl.d/99-workstation-perf.conf
-      - source: system/usr/lib/tmpfiles.d/libvirt-dnsmasq.conf
+      - source: usr/lib/tmpfiles.d/libvirt-dnsmasq.conf
         destination: /usr/lib/tmpfiles.d/
   - type: systemd
     system:
