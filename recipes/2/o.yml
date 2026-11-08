@@ -100,9 +100,6 @@ modules:
     files:
       - source: system/
         destination: /
-  - type: script
-    scripts:
-      - perm-fix.sh
   - type: systemd
     system:
       enabled:
@@ -110,6 +107,7 @@ modules:
         - sddm.service
   - type: script
     scripts:
+      - perm-fix.sh
       - regenerateinitramfs.sh
   - type: wayblue-signing
     source: local
