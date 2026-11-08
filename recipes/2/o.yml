@@ -27,6 +27,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - glibc
         - gtk4 
         - gtk4-layer-shell
         - rofi-wayland
