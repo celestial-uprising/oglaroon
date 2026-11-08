@@ -95,12 +95,14 @@ modules:
     scripts:
       - rhun.sh
       - zen.sh
-      - perm-fix.sh
       - annoyances-2.sh
   - type: files
     files:
       - source: system/
         destination: /
+  - type: script
+    scripts:
+      - perm-fix.sh
   - type: systemd
     system:
       enabled:
