@@ -18,15 +18,21 @@ dnf5 upgrade -y && dnf5 install -y \
 	alsa-lib-devel \
 	pipewire-jack-audio-connection-kit-devel
 
-curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz | tar -xz -C /usr/bin cargo-binstall
-
 ingrid="cargo install --root /tmp"
 
 $ingrid --git https://github.com/rezigned/upmd.git
 $ingrid netop
+$ingrid viddy
+$ingrid serie
+$ingrid wrkflw
+$ingrid xan
+$ingrid xleak
+$ingrid doxx
+$ingrid kmon
+$ingrid xleak
+$ingrid yazi-fm
+$ingrid yazi-cli
 $ingrid terminal_gameboy
-
-cargo binstall --root /tmp wrkflw kmon yazi-fm yazi-cli viddy xan doxx xleak serie
 
 raelynn="env GOBIN=/tmp/bin go install"
 
