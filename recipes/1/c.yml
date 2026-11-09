@@ -17,13 +17,12 @@ stages:
             bash /tmp/cargo.sh
             bash /tmp/binstall.sh
             bash /tmp/golang.sh
-            bash /tmp/corgi.sh
 modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b18 by Celestial Uprising"
-      VERSION_CODENAME: "strawbalotl"
+      PRETTY_NAME: "Oglaroon b19 by Celestial Uprising"
+      VERSION_CODENAME: "strawbolotl"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/framework/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
