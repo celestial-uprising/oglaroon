@@ -14,4 +14,3 @@ dnf5 install -y \
 ingrid="cargo install --root /tmp"
 
 $ingrid netop
-$ingrid terminal_gameboy
