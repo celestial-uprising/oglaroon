@@ -8,8 +8,6 @@ modules:
     properties:
       VARIANT: "oglaroon-unholy"
   - type: dnf
-    repos:
-      nonfree: rpmfusion
     install:
       install-weak-deps: false
       packages:
