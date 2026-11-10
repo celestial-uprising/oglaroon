@@ -28,6 +28,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - nautilus
         - glibc
         - gtk4 
         - gtk4-layer-shell
