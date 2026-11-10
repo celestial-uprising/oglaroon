@@ -28,7 +28,6 @@
 - *oglaroon*  -- gracefully unstoppable
 - *oglaroon-dev*  -- clean & classy; virtualization tools included
 - *oglaroon-headless*  -- deployable and reliable
-- *oglaroon-gg*  -- minimal desktop, maximum fps; steam/gamescope/mangohud
 - *oglaroon-muse*  -- elegant workspace with creator tools preinstalled
 - *oglaroon-unholy*  -- work hard, play hard, build anything
 - *oglaroon-virt*  -- secure and specialized for qemu + kvm virtual enviroments

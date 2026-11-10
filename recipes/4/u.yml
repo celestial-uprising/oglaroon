@@ -26,12 +26,6 @@ modules:
         - scribus
         - obs-studio
         - obs-studio-plugin-vaapi
-        - steam
-        - steam-devices
-        - mangohud
-        - gamescope
-        - gamemode
-        - piper
   - type: default-flatpaks
     configurations:
       - notify: true
