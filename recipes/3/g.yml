@@ -17,11 +17,19 @@ modules:
         - piper
         - obs-studio
         - obs-studio-plugin-vaapi
-        - steam
         - steam-devices
-        - mangohud
-        - gamescope
         - gamemode
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - com.valvesoftware.Steam
+          - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+          - com.valvesoftware.Steam.Utility.steamtinkerlaunch
+          - org.freedesktop.Platform.VulkanLayer.gamescope
+          - org.freedesktop.Platform.VulkanLayer.MangoHud
+          - dev.lizardbyte.app.Sunshine
   - type: files
     files:
       - source: extras/99-cpu-governor.rules

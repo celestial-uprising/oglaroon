@@ -67,6 +67,7 @@ jobs:
         recipe:
           - 3/d.yml
           - 3/m.yml
+          - 3/g.yml
     steps:
       - name: Building Stage 3 Images
         uses: blue-build/github-action@v1.13

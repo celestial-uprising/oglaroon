@@ -16,6 +16,7 @@ stages:
           - dnf5 upgrade -y
           - |
             bash /tmp/ironbar.sh
+            bash /tmp/mgba.sh
 modules:
   - type: os-release
     properties:
@@ -28,6 +29,11 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - qt6-qtbase
+        - libzip
+        - libpng
+        - zlib
+        - SDL2
         - nautilus
         - glibc
         - gtk4 
@@ -90,10 +96,29 @@ modules:
         - alsa-firmware
         - wireplumber
         - flatpak
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - com.valvesoftware.SteamLink
+          - com.moonlight_stream.Moonlight
   - type: copy
     from: builder
     src: /tmp/bin/
     dest: /usr/bin/
+  - type: copy
+    from: builder
+    src: /tmp/mgba/res/
+    dest: /usr/share/mgba/
+  - type: copy
+    from: builder
+    src: /tmp/mgba/res/mgba-qt.desktop
+    dest: /usr/share/applications/mgba-qt.desktop
+  - type: copy
+    from: builder
+    src: /tmp/hicolor/
+    dest: /usr/share/icons/hicolor/
   - type: script
     scripts:
       - rhun.sh
