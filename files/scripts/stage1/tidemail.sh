@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -oue pipefail
 
+dnf5 install -y \
+	wget
+
 URL="https://github.com/allisonhere/tidemail/releases/latest/download/tidemail-linux-x86_64.tar.gz"
 
 cd /tmp
