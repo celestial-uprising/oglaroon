@@ -25,14 +25,13 @@ modules:
       - amdgpu.ppfeaturemask=0xffffffff
       - amdgpu.sg_display=0
   - type: dnf
+    repos:
+      copr:
+        - archjun/mgba
     install:
       install-weak-deps: false
       packages:
-        - qt6-qtbase
-        - libzip
-        - libpng
-        - zlib
-        - SDL2
+        - mgba
         - nautilus
         - glibc
         - gtk4 
