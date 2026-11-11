@@ -1,6 +1,6 @@
 name: bluebuild
 on:
-    schedule:
+  schedule:
     - cron:
         "00 08 * * *"
   push:
