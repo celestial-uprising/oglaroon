@@ -27,7 +27,8 @@ modules:
   - type: dnf
     repos:
       copr:
-        - archjun/mgba
+        - name: archjun/mgba
+          chroot: fedora-44-x86_64
     install:
       install-weak-deps: false
       packages:
