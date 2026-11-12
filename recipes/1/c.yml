@@ -143,5 +143,4 @@ modules:
       - pi-bolt.sh
       - annoyances.sh
       - regenerateinitramfs.sh
-  - type: wayblue-signing
-    source: local
+  - type: signing

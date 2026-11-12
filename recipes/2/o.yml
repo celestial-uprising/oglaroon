@@ -113,7 +113,7 @@ modules:
     dest: /usr/share/
   - type: script
     scripts:
-      - zen.sh
+      - twilght.sh
       - annoyances-2.sh
   - type: files
     files:
@@ -132,5 +132,4 @@ modules:
     scripts:
       - perm-fix.sh
       - regenerateinitramfs.sh
-  - type: wayblue-signing
-    source: local
+  - type: signing

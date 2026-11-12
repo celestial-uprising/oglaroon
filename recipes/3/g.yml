@@ -39,5 +39,4 @@ modules:
   - type: script
     scripts:
       - regenerateinitramfs.sh
-  - type: wayblue-signing
-    source: local
+  - type: signing
