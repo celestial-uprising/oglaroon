@@ -23,11 +23,11 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b21 by Celestial Uprising"
-      VERSION_CODENAME: "strawbolotl"
+      PRETTY_NAME: "Oglaroon b22 by Celestial Uprising"
+      VERSION_CODENAME: "raspolotl"
       ID_LIKE: fedora
-      HOME_URL: "https://github.com/celestial-uprising/framework/"
-      BUG_REPORT_URL: "https://github.com/celestial-uprising/framework/"
+      HOME_URL: "https://github.com/celestial-uprising/oglaroon/"
+      BUG_REPORT_URL: "https://github.com/celestial-uprising/oglaroon/"
       VARIANT: "oglaroon-core"
       RELEASE_TYPE: "beta"
   - type: kargs
