@@ -14,7 +14,7 @@ stages:
           - mkdir -p /tmp/bin
           - dnf5 upgrade -y
           - |
-            bash /tmp/cargo.sh
+            bash /tmp/netop.sh
             bash /tmp/binstall.sh
             bash /tmp/golang.sh
             bash /tmp/tidemail.sh
@@ -23,7 +23,7 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b22 by Celestial Uprising"
+      PRETTY_NAME: "Oglaroon b23 by Celestial Uprising"
       VERSION_CODENAME: "raspolotl"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/oglaroon/"

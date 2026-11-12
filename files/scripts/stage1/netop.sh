@@ -10,6 +10,6 @@ dnf5 install -y \
 	cmake \
 	libpcap-devel
 
-ingrid="cargo install --root /tmp"
+cargo install --root /tmp netop
 
-$ingrid netop
+

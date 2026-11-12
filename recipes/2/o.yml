@@ -16,6 +16,7 @@ stages:
           - dnf5 upgrade -y
           - |
             bash /tmp/ironbar.sh
+            bash /tmp/rhun.sh
 modules:
   - type: os-release
     properties:
@@ -106,9 +107,12 @@ modules:
     from: builder
     src: /tmp/bin/
     dest: /usr/bin/
+  - type: copy
+    from: builder
+    src: /tmp/rhun/share/
+    dest: /usr/share/
   - type: script
     scripts:
-      - rhun.sh
       - zen.sh
       - annoyances-2.sh
   - type: files
