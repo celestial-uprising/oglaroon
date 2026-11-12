@@ -113,7 +113,7 @@ modules:
     dest: /usr/share/
   - type: script
     scripts:
-      - twilght.sh
+      - twilight.sh
       - annoyances-2.sh
   - type: files
     files:
