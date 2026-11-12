@@ -32,7 +32,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - mgba
+        - mgba-qt
         - nautilus
         - glibc
         - gtk4 
