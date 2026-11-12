@@ -8,8 +8,7 @@ dnf5 install -y \
 	make \
 	gcc-c++ \
 	cmake \
-	libpcap-devel \
-	alsa-lib-devel
+	libpcap-devel
 
 ingrid="cargo install --root /tmp"
 

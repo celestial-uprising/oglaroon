@@ -20,6 +20,5 @@ cargo binstall --root /tmp --no-confirm \
 	xleak \
 	serie \
 	zellij \
-	rmux \
 	croft-software \
 	upmd
