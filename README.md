@@ -6,7 +6,7 @@
 
 - *Yazi* | rapid & beautiful rusty file-manager 
 - *Flyline* | bash plugin, cause thinking shouldn't require spelling degrees
-- *Rmux, Zellij* | modern-day, rusty t-mux replacements with intense QoL improvements
+- *Corgi* | modern-day herdr & t-mux replacement with intense QoL improvements
 - *Tidemail* | beautiful tui mail client, compatible with gmail and 365
 - *Neovim* | cli Editor, with lazyvim's dependencies preconfigured
 - *Siltide, Nvtop, Btop* | detailed insights for all type of hardware
