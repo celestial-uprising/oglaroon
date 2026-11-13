@@ -12,6 +12,10 @@
 
 ## Fixes & Additions
 
+- Scripts 
+    - Lazyvim Prep script
+    - System Update script
+
 - ironbar icons
 - tidemail icon
 
