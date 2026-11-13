@@ -2,5 +2,4 @@
 set -euo pipefail
 
 rm /etc/profile.d/*.csh
-rm /usr/share/applications/kitty*
 rm /usr/share/applications/rofi*
