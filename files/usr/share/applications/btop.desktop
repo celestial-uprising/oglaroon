@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=btop++
+Icon=btop
+Exec=btop
+Terminal=true
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task

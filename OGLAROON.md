@@ -13,7 +13,6 @@
 ## Fixes & Additions
 
 - Scripts 
-    - Lazyvim Prep script
     - System Update script
 
 - ironbar icons
@@ -21,15 +20,8 @@
 
 ## .Desktop Files
 
-- Croft
-- Corgi
-- Yazi
-- Siltide
 - Kmon
 - Netop
 - Glow -t
-- Pi-Bolt
-- LazyJournal
 - Pastel
-- S-Tui
 - System Upgrade (rustup, flatpaks, bootc upgrade, pi-bolt extensions[?])

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Croft IDE
+Exec=croft
+Icon=/usr/share/pixmaps/croft.png
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;

@@ -1,8 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=TideMail
-GenericName=Mail Client
-Comment=Keyboard-first terminal email client
 Exec=tidemail
 Icon=/usr/share/pixmaps/tidemail.png
 Terminal=true

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Virtual Machine Manager
+Icon=virt-manager
+Exec=virt-manager
+Type=Application
+Terminal=false
+Categories=System;Emulator;GTK;
+Keywords=virtualization;libvirt;vm;vmm;qemu;xen;lxc;kvm;

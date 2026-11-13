@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=S-Tui
+Exec=s-tui
+Icon=/usr/share/pixmaps/s-tui.png
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;

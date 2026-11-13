@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=rhun
+Comment=Open rhun://file/ links in rhun
+Exec=rhun -- %u
+Icon=rhun
+Terminal=false
+NoDisplay=true
+MimeType=x-scheme-handler/rhun;
+StartupWMClass=rhun
