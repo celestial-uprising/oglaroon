@@ -1,7 +1,6 @@
 /******************************************************************************
- * ROFI Color theme
- * User: Celestial-Uprising
- * Copyright: Amelia Shepherd
+ * Celestial Uprising's Rofi Theme
+ * Copyright: Amelia Shepherd (2026)
  ******************************************************************************/
 * {
     crimson:            #d98a8a;
@@ -10,10 +9,10 @@
     algae:	        #b5bd91;
     red:           	#1a1110;
     pink:		#e1b8bc;
-    bc:                 #b5bd9180;
     spacing:            2;
     sc:              	#9b7e9f40;
-    bg:           	#1a11100f;
+    bc:              	#ffb4abaa;
+    bg:           	#1a111044;
     text:	        #e1b8bc;
     font:		"Victor Mono Nerd Font 16";
 }
