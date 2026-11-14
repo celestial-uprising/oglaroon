@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=nvtop
-Type=Application
-Terminal=true
-Exec=nvtop
-Icon=nvtop
-Categories=System;Monitor;
-X-AppImage-Integrate=false
-
