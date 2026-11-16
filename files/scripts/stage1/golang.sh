@@ -20,7 +20,6 @@ $raelynn github.com/edoardottt/cariddi/cmd/cariddi@latest
 $raelynn github.com/fumiyas/qrc/cmd/qrc@latest
 $raelynn github.com/deveshctl/layerx@latest
 $raelynn github.com/B33pBeeps/redthread/cmd/redthread@latest
-$raelynn github.com/felangga/chiko@latest
 $raelynn github.com/jongio/grut@latest
 $raelynn github.com/gfazioli/octoscope@latest
 $raelynn github.com/yutat23/lsoff@latest
