@@ -19,8 +19,6 @@ stages:
             bash /tmp/golang.sh
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
-            bash /tmp/eget.sh
-          - chmod +x /tmp/bin/*
 modules:
   - type: os-release
     properties:
