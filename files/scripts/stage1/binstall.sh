@@ -20,4 +20,21 @@ cargo binstall --root /tmp --no-confirm \
 	xleak \
 	serie \
 	croft-software \
-	upmd
+	upmd \
+	herdr \
+	llmfit \
+	splashboard \
+	xfr \
+	eilmeldung \
+	swaptop \
+	gfold \
+	lla \
+	reknife \
+	bookokrat \
+	edamame \
+	elio \
+	termscp \
+	zizmor \
+	llamastash \
+	papr-tui \
+	rura

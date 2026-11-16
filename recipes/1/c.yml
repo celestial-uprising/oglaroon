@@ -19,6 +19,8 @@ stages:
             bash /tmp/golang.sh
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
+            bash /tmp/eget.sh
+          - chmod +x /tmp/bin/*
 modules:
   - type: os-release
     properties:
@@ -43,6 +45,12 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - radare2
+        - just
+        - ov
+        - asciinema
+        - rizin
+        - gh
         - firewalld
         - nftables
         - zram-generator-defaults
