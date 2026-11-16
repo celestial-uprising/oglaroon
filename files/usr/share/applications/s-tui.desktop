@@ -6,3 +6,4 @@ Icon=/usr/share/pixmaps/s-tui.png
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
+GenericName=Monitor CPU Temperature Frequency Power

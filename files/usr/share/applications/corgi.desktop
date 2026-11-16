@@ -6,3 +6,4 @@ Icon=/usr/share/pixmaps/corgi.png
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
+GenericName=Terminal Multiplexor for Humans and Agents

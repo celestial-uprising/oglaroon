@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=sPing
+Exec=sping
+Icon=/usr/share/pixmaps/sping.png
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;
+GenericName=Improved Ping with Visuals & Diagnostics

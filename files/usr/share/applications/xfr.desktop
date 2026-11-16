@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=XFR
+Exec=xfr
+Icon=/usr/share/pixmaps/xfr.png
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;
+GenericName=Modern iPerf with Live Interface
