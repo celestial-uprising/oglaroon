@@ -18,6 +18,7 @@ stages:
             bash /tmp/ironbar.sh
             bash /tmp/rhun.sh
             bash /tmp/solipsist.sh
+            bash /tmp/crow.sh
 modules:
   - type: os-release
     properties:
@@ -34,6 +35,10 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - fontconfig-devel 
+        - libxkbcommon-devel
+        - libxcb-devel
+        - wayland-devel
         - loupe
         - clapper
         - mgba-qt

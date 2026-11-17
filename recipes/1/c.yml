@@ -25,8 +25,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b24 by Celestial Uprising"
-      VERSION_CODENAME: "raspolotl"
+      PRETTY_NAME: "Oglaroon b25 by Celestial Uprising"
+      VERSION_CODENAME: "birbs"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/oglaroon/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/oglaroon/"
@@ -124,6 +124,7 @@ modules:
     fonts:
       nerd-fonts:
         - VictorMono
+        - JetBrainsMono
   - type: files
     files:
       - source: usr/lib/bash/libflyline
