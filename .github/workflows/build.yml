@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 2/o.yml
+          - 1/c.yml
     steps:
       - name: Building Stage 1 Images
         uses: blue-build/github-action@v1.13
@@ -45,9 +45,9 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 3/d.yml
-          - 3/m.yml
-          - 3/g.yml
+          - 2/o.yml
+          - 2/v.yml
+          - 2/h.yml
     steps:
       - name: Building Stage 2 Images
         uses: blue-build/github-action@v1.13
@@ -68,9 +68,32 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - 4/u.yml
+          - 3/d.yml
+          - 3/m.yml
+          - 3/g.yml
     steps:
       - name: Building Stage 3 Images
+        uses: blue-build/github-action@v1.13
+        with:
+          recipe: ${{ matrix.recipe }}
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          maximize_build_space: true
+  stage_four:
+    name: Building Stage 4 Images
+    runs-on: ubuntu-latest
+    needs: stage_three
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: false
+      matrix:
+        recipe:
+          - 4/u.yml
+    steps:
+      - name: Building Stage 4 Images
         uses: blue-build/github-action@v1.13
         with:
           recipe: ${{ matrix.recipe }}
