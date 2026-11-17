@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=zizmor
+Exec=zizmmor
+Icon=/usr/share/pixmaps/zizmor.svg
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;
+GenericName=

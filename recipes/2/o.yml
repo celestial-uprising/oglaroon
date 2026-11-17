@@ -33,6 +33,8 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - loupe
+        - clapper
         - mgba-qt
         - nautilus
         - glibc
@@ -79,12 +81,8 @@ modules:
         - kitty
         - zathura
         - zathura-plugins-all
-        - mpv
         - ffmpeg
         - ffmpegthumbnailer
-        - mpd
-        - mpc
-        - imv
         - remmina
         - virt-manager
         - headsetcontrol

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=xLeak
+Exec=xleak
+Icon=/usr/share/pixmaps/xleak.jpg
+Terminal=true
+Categories=ConsoleOnly;
+Keywords=terminal;
+GenericName=
