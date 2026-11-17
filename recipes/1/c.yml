@@ -21,11 +21,12 @@ stages:
             bash /tmp/golang.sh
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
+            bash /tmp/pi-bolt.sh
 modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b25 by Celestial Uprising"
+      PRETTY_NAME: "Oglaroon b26 by Celestial Uprising"
       VERSION_CODENAME: "birbs"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/oglaroon/"
@@ -120,6 +121,10 @@ modules:
     from: builder
     src: /tmp/bin/
     dest: /usr/bin/
+  - type: copy
+    from: builder
+    src: /tmp/skel/
+    dest: /etc/skel/
   - type: fonts
     fonts:
       nerd-fonts:
@@ -152,7 +157,6 @@ modules:
         - podman.socket
   - type: script
     scripts:
-      - pi-bolt.sh
       - annoyances.sh
       - regenerateinitramfs.sh
   - type: signing
