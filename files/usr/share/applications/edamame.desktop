@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/edamame.svg
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=
+GenericName=MD editor that stays rendered while editing

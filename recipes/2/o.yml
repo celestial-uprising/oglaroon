@@ -17,6 +17,7 @@ stages:
           - |
             bash /tmp/ironbar.sh
             bash /tmp/rhun.sh
+            bash /tmp/solipsist.sh
 modules:
   - type: os-release
     properties:

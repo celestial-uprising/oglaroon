@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/herdr.svg
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=Agent-Aware Terminal Multiplexor
+GenericName=agent-aware terminal multiplexor

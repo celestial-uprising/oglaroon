@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/llmfit.svg
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=Find LLMs Based on System Specs
+GenericName=find LLMs based on system specs

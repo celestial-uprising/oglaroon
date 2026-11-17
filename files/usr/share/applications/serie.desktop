@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Serie
-Exec=serie
-Icon=/usr/share/pixmaps/serie.png
-Terminal=true
-Categories=ConsoleOnly;
-Keywords=terminal;
-GenericName=

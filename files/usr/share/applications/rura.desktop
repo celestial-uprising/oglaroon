@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/rura.svg
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=
+GenericName=interactive shell pipeline scratchpad

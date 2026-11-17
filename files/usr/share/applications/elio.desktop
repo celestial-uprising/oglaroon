@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/elio.png
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=
+GenericName=file manager with rich previews

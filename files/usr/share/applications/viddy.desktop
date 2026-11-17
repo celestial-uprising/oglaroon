@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Viddy
-Exec=viddy
-Icon=/usr/share/pixmaps/viddy.png
-Terminal=true
-Categories=ConsoleOnly;
-Keywords=terminal;
-GenericName=

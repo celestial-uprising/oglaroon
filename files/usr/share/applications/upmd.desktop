@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=UPMD
-Exec=upmd
-Icon=/usr/share/pixmaps/upmd.svg
-Terminal=true
-Categories=ConsoleOnly;
-Keywords=terminal;
-GenericName=

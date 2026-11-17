@@ -6,4 +6,4 @@ Icon=/usr/share/pixmaps/lazyjournal.png
 Terminal=true
 Categories=ConsoleOnly;
 Keywords=terminal;
-GenericName=Convenient UI for Journalctl
+GenericName=convenient UI for journalctl
