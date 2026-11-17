@@ -26,7 +26,7 @@ jobs:
           - 2/o.yml
     steps:
       - name: Building Stage 1 Images
-        uses: blue-build/github-action@v1.13
+        uses: blue-build/github-action@v1.14
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
@@ -50,7 +50,7 @@ jobs:
           - 3/g.yml
     steps:
       - name: Building Stage 2 Images
-        uses: blue-build/github-action@v1.13
+        uses: blue-build/github-action@v1.14
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
@@ -71,7 +71,7 @@ jobs:
           - 4/u.yml
     steps:
       - name: Building Stage 3 Images
-        uses: blue-build/github-action@v1.13
+        uses: blue-build/github-action@v1.14
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
