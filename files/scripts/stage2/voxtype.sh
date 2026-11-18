@@ -6,7 +6,7 @@ dnf5 install -y \
 	rustc \
 	pkg-config \
 	cmake \
-	libpcap-devel
+	libpcap-devel \
 	alsa-lib-devel \
 	clang-devel \
 	git
