@@ -11,4 +11,7 @@ dnf5 install -y \
 	clang-devel \
 	git
 
-cargo install --features gpu-vulkan,osd-native --root /tmp --git https://github.com/peteonrails/voxtype
+git clone https://github.com/peteonrails/voxtype /tmp/voxtype
+cd /tmp/voxtype
+cargo build --release --features gpu-vulkan,osd-native 
+cp /tmp/voxtype/target/release/voxtype /tmp/bin/voxtype
