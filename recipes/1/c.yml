@@ -22,6 +22,7 @@ stages:
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
             bash /tmp/kb.sh
+            bash /tmp/llmv.sh
             bash /tmp/pi-bolt.sh
 modules:
   - type: os-release
