@@ -20,6 +20,7 @@ stages:
             bash /tmp/solipsist.sh
             bash /tmp/crow.sh
             bash /tmp/voxtype.sh
+            bash /tmp/poptato.sh
 modules:
   - type: os-release
     properties:
@@ -36,8 +37,9 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - luajit 
+        - lua-lgi
         - wtype
-        - waybar
         - fontconfig-devel 
         - libxkbcommon-devel
         - libxcb-devel

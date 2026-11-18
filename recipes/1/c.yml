@@ -160,6 +160,7 @@ modules:
         - podman.socket
   - type: script
     scripts:
+      - bash-completion-helper.sh
       - annoyances.sh
       - regenerateinitramfs.sh
   - type: signing
