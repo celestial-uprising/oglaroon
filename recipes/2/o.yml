@@ -20,7 +20,6 @@ stages:
             bash /tmp/solipsist.sh
             bash /tmp/crow.sh
             bash /tmp/voxtype.sh
-            bash /tmp/poptato.sh
 modules:
   - type: os-release
     properties:
@@ -37,6 +36,22 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - gtkmm30
+        - gtk-layer-shell
+        - jsoncpp
+        - fmt
+        - spdlog
+        - libxkbcommon
+        - libdbusmenu-gtk3
+        - wireplumber-libs
+        - pulseaudio-libs
+        - pipewire-jack-audio-connection-kit-libs
+        - playerctl-libs
+        - libnl3
+        - upower-libs
+        - libinput
+        - libevdev
+        - systemd-libs
         - luajit 
         - lua-lgi
         - wtype
