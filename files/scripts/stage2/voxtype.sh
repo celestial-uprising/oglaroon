@@ -14,6 +14,7 @@ dnf5 install -y \
 	make \
 	vulkan-loader-devel \
 	vulkan-headers \
+	libxkbcommon-devel \
 	glslc
 
 git clone https://github.com/peteonrails/voxtype /tmp/voxtype
