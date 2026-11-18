@@ -9,7 +9,12 @@ dnf5 install -y \
 	libpcap-devel \
 	alsa-lib-devel \
 	clang-devel \
-	git
+	git \
+	gcc \
+	make \
+	vulkan-loader-devel \
+	vulkan-headers \
+	shaderc
 
 git clone https://github.com/peteonrails/voxtype /tmp/voxtype
 cd /tmp/voxtype
