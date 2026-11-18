@@ -21,6 +21,7 @@ stages:
             bash /tmp/golang.sh
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
+            bash /tmp/kb.sh
             bash /tmp/pi-bolt.sh
 modules:
   - type: os-release
@@ -46,6 +47,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - chromium-headless
         - distcc
         - ccache
         - smartmontools

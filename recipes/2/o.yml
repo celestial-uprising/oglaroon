@@ -19,6 +19,7 @@ stages:
             bash /tmp/rhun.sh
             bash /tmp/solipsist.sh
             bash /tmp/crow.sh
+            bash /tmp/voxtype.sh
 modules:
   - type: os-release
     properties:
@@ -35,6 +36,8 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - wtype
+        - waybar
         - fontconfig-devel 
         - libxkbcommon-devel
         - libxcb-devel
@@ -117,6 +120,7 @@ modules:
     dest: /usr/share/
   - type: script
     scripts:
+      - voxtype-configure.sh
       - twilight.sh
       - annoyances-2.sh
   - type: files
