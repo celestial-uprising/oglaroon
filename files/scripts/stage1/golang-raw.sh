@@ -25,3 +25,6 @@ $raelynn github.com/gfazioli/octoscope@latest
 $raelynn github.com/yutat23/lsoff@latest
 $raelynn github.com/Gaurav-Gosain/tuios/cmd/tuios@latest
 $raelynn github.com/Gaurav-Gosain/tuios/cmd/tuios-web@latest
+$raelynn github.com/Ri4dH/failtrace/cmd/failtrace@latest
+$raelynn github.com/pedrosousa13/onda@latest
+$raelynn github.com/halpworld/halpradio@latest
