@@ -18,7 +18,7 @@ stages:
             bash /tmp/asak.sh
             bash /tmp/terminactory.sh
             bash /tmp/binstall.sh
-            bash /tmp/golang.sh
+            bash /tmp/golang-raw.sh
             bash /tmp/tidemail.sh
             bash /tmp/corgi.sh
             bash /tmp/kb.sh
@@ -28,8 +28,8 @@ modules:
   - type: os-release
     properties:
       NAME: "Oglaroon"
-      PRETTY_NAME: "Oglaroon b26 by Celestial Uprising"
-      VERSION_CODENAME: "birbs"
+      PRETTY_NAME: "Oglaroon b27 by Celestial Uprising"
+      VERSION_CODENAME: "raven"
       ID_LIKE: fedora
       HOME_URL: "https://github.com/celestial-uprising/oglaroon/"
       BUG_REPORT_URL: "https://github.com/celestial-uprising/oglaroon/"
