@@ -48,6 +48,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - mpv
         - chromium-headless
         - distcc
         - ccache
